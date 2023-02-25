@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+  color: #FAFAFF;
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+  background-color: #6E5C62;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header {
+  height: 6vh;
+}
+h1 {
+  font-weight: 600;
+  font-size: 4vh;
+  line-height: 6vh;
+}
+
+button {
+  background-color: #615458;
+  width: 6rem;
+  height: 5.8rem;
+  border-radius: 10%;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  margin: 0.2rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.1rem;
+  margin-top: 7rem;
+  padding: 1rem;
+  max-width: 30rem;
+  max-height: 30rem;
+  height: 100%;
+  width: 100%;
+}
+.rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.alfabeto {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(32, 1fr);
+  grid-gap: 0.25rem;
+  margin-top: 12rem;
+}
+
+.alfabeto button {
+  margin: 0.1rem;
+  background-color: #4C4347;
+  width: 5.5rem;
+  height: 5.2rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  display: flex;
+  grid-column: span 3;
+  border-radius: 8%;
+  align-items: center;
+  justify-content: center;
+}
+
+#alfabeto-A {
+  grid-column: 2 / span 3;
+}
+
+#alfabeto-Z {
+  grid-column: 3 / span 3;
+}
+
+#alfabeto-DEL {
+  grid-column: 30 / span 3;
+  width: 5rem;
+}
+
+#alfabeto-enter {
+  grid-row: 3 span 1;
+  grid-column: 25 / span 8;
+  width: 15rem;
+}
